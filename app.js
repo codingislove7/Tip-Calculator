@@ -50,7 +50,7 @@ function addToList() {
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
   let text = date + " $" +separate(Answer)+ " for " + forInput.value;
 
-  console.log(forInput.value);
+  
   // create a text node from input value
   let textB = document.createTextNode(text);
 
@@ -84,7 +84,7 @@ function addToList() {
   if (input.value !== "" && forInput.value !== "") {
     answer.innerText = Answer;
     // add li to ul tag
-    ul.appendChild(li);
+    ul.insertBefore(li, ul.childNodes[0]);
     // clear the input value to add more text
     input.value = "";
     forInput.value = "";
