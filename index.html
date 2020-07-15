@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Tip Calculator</title>
+</head>
+</head>
+
+<body class="bg-dark bg-gradient">
+  <!-- Button trigger modal -->
+  <button type="button" class=" btn btn-outline-light ml-3 mt-3 mb-4 btn-sm " data-toggle="modal"
+    data-target="#exampleModal">
+    About
+  </button>
+
+  <div class="container main p-3  rounded bg-secondary bg-gradient">
+    <h2 class="text-center mb-5 mt-3 title">Tip Calculator </h2>
+    <div class="input-group mb-3 ">
+      <span class="input-group-text">$</span>
+      <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)"
+        placeholder="Price - Example: 30">
+
+    </div>
+    <div class="input-group mb-3 ">
+      <span class="input-group-text">For</span>
+      <input type="text" class="form-control forInput" aria-label="Amount (to the nearest dollar)"
+        placeholder="Example: Dinner">
+
+    </div>
+    <h4 class="text-light mb-4 my-4">You want to Tip:<span class="percent p-2 mx-1">10 %
+      </span></h4>
+
+    <input type="range" class="form-range  p-3 rounded" min="1" max="100" id="customRange2" value="10">
+    <div class="row mt-3 mb-4 ml-0">
+      <button class="btn  btn-outline-light btn-lg  add col-3">Calculate</button>
+      <h4 class="col-9 mt-1 result ">= You can Tip $ <span class="answer ">0.00</span></h4>
+    </div>
+
+  </div>
+
+  <div class="container my-3 ">
+    <ul class="list-group">
+    </ul>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content text-light bg-secondary bg-gradient">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">About</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-lead h5">
+          This application is for calculate Tip.
+          it have Local Storage and after refreshing page you still have your Tips history data. <br>
+          source : <a href="https://github.com/Super-DLT/Shopping-List" target="blank">Tip Calculator</a>
+          <br>code by
+          <a href="https://github.com/Super-DLT" target="blank">Behnam Sheykhe.</a>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-light btn-block" data-dismiss="modal">Close</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js""></script>
+  <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+    <script src=" https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

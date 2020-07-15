@@ -1,0 +1,40 @@
+.doneText {
+  background-color: rgb(251, 255, 0);
+}
+
+.title {
+  color: rgb(251, 255, 12);
+}
+.percent {
+  color: rgb(251, 255, 12);
+  font-size: 1.6rem;
+}
+.result {
+  color: rgb(251, 255, 12);
+}
+a {
+  color: rgb(251, 255, 12);
+}
+a:hover{
+ color: rgb(255, 157, 0);
+}
+ 
+.main {
+  background-color: rgba(246, 236, 236, 0.116);
+}
+.btn-outline-light {
+  font-size: 1.17rem;
+  padding: 5px;
+}
+.answer {
+  font-size: 2rem;
+}
+
+.form-range::-webkit-slider-thumb {
+  background: rgba(251, 255, 12, 0.719);
+}
+
+li {
+  color: rgb(251, 255, 12);
+  font-size: 1.3rem;
+}
