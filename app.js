@@ -138,4 +138,5 @@ function separate(Number) {
 
 function updateTextInput(val) {
   percent.innerText = val + " %";
+  range.focus();
 }
