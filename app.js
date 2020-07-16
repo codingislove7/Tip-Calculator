@@ -48,9 +48,8 @@ function addToList() {
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   var time =
     today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-  let text = date + " $" +separate(Answer)+ " for " + forInput.value;
+  let text = date + " $" + separate(Answer) + " for " + forInput.value;
 
-  
   // create a text node from input value
   let textB = document.createTextNode(text);
 
@@ -82,7 +81,7 @@ function addToList() {
 
   // check to input value is not empty
   if (input.value !== "" && forInput.value !== "") {
-    answer.innerText = "$ "+Answer;
+    answer.innerText = "$ " + Answer;
     // add li to ul tag
     ul.insertBefore(li, ul.childNodes[0]);
     // clear the input value to add more text
@@ -136,7 +135,6 @@ function separate(Number) {
   while (rgx.test(y)) y = y.replace(rgx, "$1" + "," + "$2");
   return y + z;
 }
-
 
 function updateTextInput(val) {
   percent.innerText = val + " %";

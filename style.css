@@ -23,11 +23,11 @@ a:hover{
   background-color: rgba(246, 236, 236, 0.116);
 }
 .btn-outline-light {
-  font-size: 1.17rem;
+  font-size: 1rem;
   padding: 5px;
 }
 .answer {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .form-range::-webkit-slider-thumb {
