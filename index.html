@@ -27,7 +27,7 @@
     <div class="input-group mb-3 ">
       <span class="input-group-text">$</span>
       <input type="number" class="form-control" aria-label="Amount (to the nearest dollar)"
-        placeholder="Price - Example: 30">
+    placeholder="Price - Example: 30" >
 
     </div>
     <div class="input-group mb-3 ">
@@ -39,10 +39,10 @@
     <h4 class="text-light mb-4 my-4">You want to Tip:<span class="percent p-2 mx-1">10 %
       </span></h4>
 
-    <input type="range" class="form-range  p-3 rounded" min="1" max="100" id="customRange2" value="10">
+    <input type="range" class="form-range  p-3 rounded"  min="1" max="100" id="customRange2" value="10" onchange="updateTextInput(this.value)">
     <div class="row mt-3 mb-4 ml-0">
       <button class="btn  btn-outline-light btn-lg  add col-3">Calculate</button>
-      <h4 class="col-9 mt-1 result ">= You can Tip $ <span class="answer ">0.00</span></h4>
+      <h4 class="col-9 mt-1 result ">= You can Tip  <span class="answer "> $ 0.00</span></h4>
     </div>
 
   </div>
@@ -79,7 +79,7 @@
       </div>
     </div>
   </div>
-
+ 
   <script src="./app.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js""></script>
   <!-- Optional JavaScript -->

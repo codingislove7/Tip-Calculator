@@ -82,7 +82,7 @@ function addToList() {
 
   // check to input value is not empty
   if (input.value !== "" && forInput.value !== "") {
-    answer.innerText = Answer;
+    answer.innerText = "$ "+Answer;
     // add li to ul tag
     ul.insertBefore(li, ul.childNodes[0]);
     // clear the input value to add more text
@@ -122,9 +122,9 @@ remove.forEach((e) => {
 });
 
 //update range percent
-range.addEventListener("mousemove", () => {
-  percent.innerText = range.value + " %";
-});
+// range.addEventListener("mousemove", () => {
+//   percent.innerText = range.value + " %";
+// });
 
 function separate(Number) {
   Number += "";
@@ -135,4 +135,9 @@ function separate(Number) {
   var rgx = /(\d+)(\d{3})/;
   while (rgx.test(y)) y = y.replace(rgx, "$1" + "," + "$2");
   return y + z;
+}
+
+
+function updateTextInput(val) {
+  percent.innerText = val + " %";
 }
